@@ -1,0 +1,6 @@
+<beans>
+	<bean id="u" class="com.july.dao.impl.UserDAOImpl" />
+	<bean id="userService" class="com.july.service.UserService"> 
+		<property name="userDAO" bean="u"/>
+	</bean>
+</beans>
